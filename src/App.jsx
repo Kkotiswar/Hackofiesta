@@ -1,10 +1,11 @@
 import './App.css';
 import React, { useState } from 'react';
 
-import  NavbarTop  from './components/NavbarTop';
+// import  NavbarTop  from './components/NavbarTop';
 import NavbarSec from './components/NavbarSec';
 import Caraousel from './components/Caraousel';
 import Auth from './components/Auth';
+import About from './components/About'
 
 function App() {
 
@@ -28,7 +29,7 @@ function App() {
        handleBtnClick={handleBtnClick}
      />
     { form === true ? <Auth /> : <Caraousel />}
-     
+     <About />
 
       
     </div>
